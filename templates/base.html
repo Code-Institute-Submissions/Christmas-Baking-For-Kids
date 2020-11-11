@@ -21,6 +21,7 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
             <li><a href="#">Recipies</a></li>
+            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="#">New Recipie</a></li>
             <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
@@ -33,6 +34,7 @@
         <h4 class="center-align green-text text-darken-1">Christmas Baking <br>For Kids</h4>
         <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
         <li><a href="#">Recipes</a></li>
+        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
         <li><a href="#">New Recipe</a></li>
         <li><a href="{{ url_for('login') }}">Log In</a></li>
         <li><a href="{{ url_for('register') }}">Register</a></li>
