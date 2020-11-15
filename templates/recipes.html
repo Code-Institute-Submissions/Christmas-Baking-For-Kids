@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <h3 class="green-text-darken-1 center-align">All Recipes</h3>
+
 <div class="row">
     <div class="col s12 m3 offset-m1">
         <ul class="collapsible">
@@ -13,6 +15,7 @@
                 <div class="collapsible-body">
                     <strong>{{ recipe.category_name }}</strong>
                     <p>{{ recipe.recipe_description }}</p>
+                    <p><em>by: {{ recipe.added_by }}</em></p>
                 </div>
             </li>
             {% endfor %}

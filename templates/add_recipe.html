@@ -4,7 +4,8 @@
     <h3 class="green-text-darken-1 center-align">Add Your Recipe</h3>
 
     <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="">
+        <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
+        <!-- categoty selection -->
             <div class="row">
                 <div class="input-field col s12">
                     <select id="category_name" name="category_name" class="validate" required>
@@ -15,6 +16,7 @@
                     </select>
                 </div>
             </div>
+            <!-- recipe name -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="far fa-clipboard prefix green-text text-darken-1"></i>
@@ -23,6 +25,7 @@
                     <label for="recipe_name">Recipe Name</label>
                 </div>
             </div>
+            <!-- recipe image -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-image prefix green-text text-darken-1"></i>
@@ -30,18 +33,21 @@
                     <label for="image">Image</label>
                 </div>
             </div>
+            <!-- cooking time -->
             <div class="row">
                 <div class="input-field col s6">
                     <i class="far fa-clock prefix green-text text-darken-1"></i>
                     <input id="cooking_time" name="cooking_time" type="text" class="validate">
                     <label for="cooking_time">Cooking Time</label>
                 </div>
+                <!-- servings -->
                 <div class="input-field col s6">
                     <i class="fas fa-chart-pie prefix green-text text-darken-1"></i>
                     <input id="servings" name="servings" type="text" class="validate">
                     <label for="servings">Servings</label>
                 </div>
             </div>
+            <!-- recipe ingredients -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-list-ol prefix green-text text-darken-1"></i>
@@ -50,6 +56,7 @@
                     <label for="ingredients">Ingredients</label>
                 </div>
             </div>
+            <!-- recipe method -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-bars prefix green-text text-darken-1"></i>
@@ -58,12 +65,21 @@
                     <label for="method">Method</label>
                 </div>
             </div>
+            <!-- added by -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-circle prefix green-text text-darken-1"></i>
                     <input id="added_by" name="added_by" minlength="3" maxlength="20"
                     type="text" class="validate" required>
                     <label for="added_by">Added By</label>
+                </div>
+            </div>
+            <!-- submit button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn-large green darken-1 text-shadow">
+                        Add Recipe <i class="fas fa-plus-square right"></i>
+                    </button>
                 </div>
             </div>
         </form>
