@@ -1,16 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="green-text-darken-1 center-align">All Recipes</h3>
+    <h3 class="green-text-darken-1 center-align">Favorite Recipes</h3>
 
 <div class="row">
-    <div class="col s12 m3 offset-m1">
+    <div class="col s12 m8 offset-m2">
         <ul class="collapsible">
             {% for recipe in recipes %}
             <li>
                 <div class="collapsible-header">
-                    <i class="fas fa-caret-down"></i>
-                    <strong>{{ recipe.recipe_name }}</strong>
+                    <div class="col s12">
+                        <i class="fas fa-caret-down"></i>
+                        <a href="" class="btn-small green accent-4">Edit</a>
+                        <a href="" class="btn-small red accent-3">Delete</a>
+                    </div>
+                    <div class="col s9">
+                        <strong>{{ recipe.recipe_name }}</strong>
+                    </div>
                 </div>
                 <div class="collapsible-body">
                     <strong>{{ recipe.category_name }}</strong>
