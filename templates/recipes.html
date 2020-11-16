@@ -4,14 +4,14 @@
     <h3 class="green-text-darken-1 center-align">Favorite Recipes</h3>
 
 <div class="row">
-    <div class="col s12 m8 offset-m2">
+    <div class="col s12">
         <ul class="collapsible">
             {% for recipe in recipes %}
             <li>
                 <div class="collapsible-header">
                     <div class="col s12">
                         <i class="fas fa-caret-down"></i>
-                        <a href="" class="btn-small green accent-4">Edit</a>
+                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green accent-4">Edit</a>
                         <a href="" class="btn-small red accent-3">Delete</a>
                     </div>
                     <div class="col s9">
