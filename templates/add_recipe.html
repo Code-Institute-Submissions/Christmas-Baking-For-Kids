@@ -51,17 +51,19 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-list-ol prefix green-text text-darken-1"></i>
-                    <input id="ingredients" name="ingredients" minlength="5" maxlength="80"
-                    type="text" class="validate" required>
-                    <label for="ingredients">Ingredients</label>
+                    <textarea id="ingredients" name="ingredients" minlength="5"
+                        maxlength="1000" class="materialize-textarea validate" required>
+                    </textarea>
+                    <label for="ingredients">Ingredients</label><br>
                 </div>
             </div>
             <!-- recipe method -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-bars prefix green-text text-darken-1"></i>
-                    <input id="method" name="method" minlength="5" maxlength="200"
-                    type="text" class="validate" required>
+                    <textarea id="method" name="method" minlength="5"
+                        maxlength="2000"  class="materialize-textarea validate" required>
+                    </textarea>
                     <label for="method">Method</label>
                 </div>
             </div>
@@ -72,6 +74,15 @@
                     <input id="added_by" name="added_by" minlength="3" maxlength="20"
                     type="text" class="validate" required>
                     <label for="added_by">Added By</label>
+                </div>
+            </div>
+            <!-- credit to -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user-circle prefix green-text text-darken-1"></i>
+                    <input id="credit_to" name="credit_to" minlength="3" maxlength="20"
+                    type="text" class="validate" required>
+                    <label for="credit_to">Credit To</label>
                 </div>
             </div>
             <!-- submit button -->
