@@ -1,10 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="green-text-darken-1 center-align">Favorite Recipes</h3>
+    <h3 class="center-align green-text text-darken-1">Welcome to Our Kitchen</h3>
+
+    <div class="row">
+        <div class="col s12">
+            <p> Christmas is a time of Joy. With twinkling lights and amazing smells from the kitchen.
+                These are a few of our holiday recipes enjoyed both in the making and eating by the whole family.
+                <br>
+                <br>
+                Feel free to add your own family recipes here.<br>
+                Just click Register above and you will be able to Add, Edit or Delete your recipes.
+                </p>
+        </div>
+    </div>
 
 <div class="row">
-    <div class="col s12">
+    <div class="col s12 m6 l3">
         <ul class="collapsible">
             {% for recipe in recipes %}
             <li>
@@ -16,7 +28,7 @@
                             <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red accent-3">Delete</a>
                         {% endif %}
                     </div>
-                    <div class="col s9">
+                    <div class="col s6">
                         <strong>{{ recipe.recipe_name }}</strong>
                     </div>
                 </div>
