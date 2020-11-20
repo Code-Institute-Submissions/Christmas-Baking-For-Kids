@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('select').formSelect();
     $('.parallax').parallax();
+    $(".dropdown-trigger").dropdown();
 
 
 });
