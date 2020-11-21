@@ -10,7 +10,7 @@
     position: relative;
     overflow: hidden;
     height: 300px;
-    width: 1350px
+    width: 1350px;
 }
 
 .btn-small {
@@ -22,3 +22,14 @@
     line-height: 42px;
 }
 
+nav.nav-extended .nav-wrapper {
+    height: 68px;
+}
+.dropdown-content li>a {
+        font-size: 16px;
+    color: #26a69a;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+    text-shadow: none;
+}

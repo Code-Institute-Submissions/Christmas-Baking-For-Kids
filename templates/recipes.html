@@ -15,33 +15,88 @@
         </div>
     </div>
 
-<div class="row">
-    <div class="col s12 m6 l3">
-        <ul class="collapsible">
-            {% for recipe in recipes %}
-            <li>
-                <div class="collapsible-header">
-                    <div class="col s12">
-                        <i class="fas fa-caret-down"></i>
-                        {% if session.user|lower == recipe.added_by|lower %}
-                            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green accent-4">Edit</a>
-                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red accent-3">Delete</a>
-                        {% endif %}
-                    </div>
-                    <div class="col s6">
-                        <strong>{{ recipe.recipe_name }}</strong>
-                    </div>
-                </div>
-                <div class="collapsible-body">
-                    <strong>{{ recipe.category_name }}</strong>
-                    <p>{{ recipe.recipe_description }}</p>
-                    <p><em>by: {{ recipe.added_by }}</em></p>
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
+    <div class="col ">
+        <h2 class="header">Our Biscuits</h2>
+        <div class="card horizontal">
+        <div class="card-image">
+            <img src="/static/images/christmas-cookies1.jpg">
+        </div>
+        <div class="card-stacked">
+            <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+            <div class="card-action">
+            <a href="#">This is a link</a>
+            </div>
+        </div>
+        </div>
     </div>
-</div>
-    
+    <div class="col ">
+        <h2 class="header">Our Sweet Collection</h2>
+        <div class="card horizontal">
+        <div class="card-image">
+            <img src="/static/images/choc-reindeer4.jpg">
+        </div>
+        <div class="card-stacked">
+            <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+            <div class="card-action">
+            <a href="#">This is a link</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col ">
+        <h2 class="header">Our Desserts</h2>
+        <div class="card horizontal">
+        <div class="card-image">
+            <img src="/static/images/christmas-trifle1.jpg">
+        </div>
+        <div class="card-stacked">
+            <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+            <div class="card-action">
+            <a href="#">This is a link</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col ">
+        <h2 class="header">Our Cakes & Cupcakes</h2>
+        <div class="card horizontal">
+        <div class="card-image">
+            <img src="/static/images/christmas-cupcakes1.jpg">
+        </div>
+        <div class="card-stacked">
+            <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+            <div class="card-action">
+            <a href="#">This is a link</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
