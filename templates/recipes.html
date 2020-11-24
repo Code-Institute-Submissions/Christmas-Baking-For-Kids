@@ -1,102 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="center-align green-text text-darken-1">Welcome to Our Kitchen</h3>
-
+    <h3 class="center-align green-text text-darken-1">Recipes</h3>
     <div class="row">
-        <div class="col s12">
-            <p> Christmas is a time of Joy. With twinkling lights and amazing smells from the kitchen.
-                These are a few of our holiday recipes enjoyed both in the making and eating by the whole family.
-                <br>
-                <br>
-                Feel free to add your own family recipes here.<br>
-                Just click Register above and you will be able to Add, Edit or Delete your recipes.
-                </p>
+        <div class="col s12 m6 l3">
+            <ul class="collapsible">
+                {% for recipe in recipes %}
+                <li>
+                    <div class="collapsible-header">
+                        <div class="col s12">
+                            <i class="fas fa-caret-down"></i>
+                            {% if session.user|lower == recipe.added_by|lower %}
+                                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green accent-4">Edit</a>
+                                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red accent-3">Delete</a>
+                            {% endif %}
+                        </div>
+                        <div class="col s6">
+                            <strong>{{ recipe.recipe_name }}</strong>
+                        </div>
+                    </div>
+                    <div class="collapsible-body">
+                        <strong>{{ recipe.category_name }}</strong>
+                        <p>{{ recipe.ingredients }}</p>
+                        <p>{{ recipe.method }}</p>
+                        <p><em>by: {{ recipe.added_by }}</em></p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
-
-    <div class="col ">
-        <h2 class="header">Our Biscuits</h2>
-        <div class="card horizontal">
-        <div class="card-image">
-            <img src="/static/images/christmas-cookies1.jpg">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-            </div>
-            <div class="card-action">
-            <a href="/templates/biscuits.html">This is a link</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="col ">
-        <h2 class="header">Our Sweet Collection</h2>
-        <div class="card horizontal">
-        <div class="card-image">
-            <img src="/static/images/choc-reindeer4.jpg">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-            </div>
-            <div class="card-action">
-            <a href="#">This is a link</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="col ">
-        <h2 class="header">Our Desserts</h2>
-        <div class="card horizontal">
-        <div class="card-image">
-            <img src="/static/images/christmas-trifle1.jpg">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-            </div>
-            <div class="card-action">
-            <a href="#">This is a link</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="col ">
-        <h2 class="header">Our Cakes & Cupcakes</h2>
-        <div class="card horizontal">
-        <div class="card-image">
-            <img src="/static/images/christmas-cupcakes1.jpg">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-            </div>
-            <div class="card-action">
-            <a href="#">This is a link</a>
-            </div>
-        </div>
-        </div>
-    </div>
-
-
-
-
 
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
