@@ -31,9 +31,9 @@ def get_recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
-@app.route("/recipes/<category>")
-def recipes(categories):
-    categories = mongo.db.categories.find().sort("category_name", 1)
+@app.route("/get_categories")
+def get_categories():
+    categories = list(mongo.db.categories.find())
     return render_template("recipes.html", categories=categories)
 
 
