@@ -29,8 +29,10 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-image prefix green-text text-darken-1"></i>
-                    <input id="image" name="image" type="text" class="validate">
-                    <label for="image">Image</label>
+                    <input id="recipe_image" name="recipe_image" class="validate" type="url"
+                    minlength="15" placeholder="Recipe Photo URL" pattern="https?:\/\/.+(jpg|jpeg|gif|bmp|png|tiff)"
+                    autocomplete="off">
+                    <label for="recipe_image">Recipe Image</label>
                 </div>
             </div>
             <!-- cooking time -->
@@ -80,7 +82,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-circle prefix green-text text-darken-1"></i>
-                    <input id="credit_to" name="credit_to" minlength="3" maxlength="20"
+                    <input id="credit_to" name="credit_to" minlength="3" maxlength="70"
                     type="text" class="validate" required>
                     <label for="credit_to">Credit To</label>
                 </div>

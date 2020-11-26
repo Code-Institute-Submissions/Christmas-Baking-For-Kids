@@ -31,6 +31,12 @@ def get_recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+@app.route("/recipes_category/<category>")
+def recipes_category(category):
+    recipes = list(mongo.db.recipes.find({'category_name': category}))
+    return render_template("recipes.html", recipes=recipes)
+
+
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find())
@@ -96,8 +102,9 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
-
+        recipes = list(mongo.db.recipes.find({'added_by': session['user']}))
+        return render_template("profile.html", username=username,
+                            recipes=recipes)
     return redirect(url_for("login"))
 
 
