@@ -122,6 +122,7 @@ def add_recipe():
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
+            "recipe_image": request.form.get("recipe_image"),
             "cooking_time": request.form.get("cooking_time"),
             "servings": request.form.get("servings"),
             "ingredients": request.form.get("ingredients"),
@@ -143,6 +144,7 @@ def edit_recipe(recipe_id):
         submit = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
+            "recipe_image": request.form.get("recipe_image"),
             "cooking_time": request.form.get("cooking_time"),
             "servings": request.form.get("servings"),
             "ingredients": request.form.get("ingredients"),
