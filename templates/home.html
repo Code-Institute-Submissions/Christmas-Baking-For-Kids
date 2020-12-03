@@ -26,7 +26,7 @@
             <p>I am a very simple card. I am good at containing small bits of information.</p>
             </div>
             <div class="card-action">
-            <a href="/templates/biscuits.html">This is a link</a>
+            <a href="{{ url_for('recipes_category', category='Biscuits') }}">Click here for our Biscuits</a>
             </div>
         </div>
         </div>
@@ -35,14 +35,14 @@
         <h2 class="header">Our Sweet Collection</h2>
         <div class="card horizontal">
         <div class="card-image">
-            <img src="/static/images/choc-reindeer4.jpg">
+            <img src="/static/images/choc-reindeer1.jpg">
         </div>
         <div class="card-stacked">
             <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information.</p>
             </div>
             <div class="card-action">
-            <a href="#">This is a link</a>
+            <a href="{{ url_for('recipes_category', category='Sweets') }}">Click here for our Sweets</a>
             </div>
         </div>
         </div>
@@ -58,7 +58,7 @@
             <p>I am a very simple card. I am good at containing small bits of information.</p>
             </div>
             <div class="card-action">
-            <a href="#">This is a link</a>
+            <a href="{{ url_for('recipes_category', category='Desserts') }}">Click here for our Desserts</a>
             </div>
         </div>
         </div>
@@ -74,7 +74,7 @@
             <p>I am a very simple card. I am good at containing small bits of information.</p>
             </div>
             <div class="card-action">
-            <a href="#">This is a link</a>
+            <a href="{{ url_for('recipes_category', category='Cupcakes') }}">Click here for our Cupcakes</a>
             </div>
         </div>
         </div>
