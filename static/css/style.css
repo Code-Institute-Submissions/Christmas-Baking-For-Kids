@@ -26,14 +26,33 @@ nav.nav-extended .nav-wrapper {
     height: 68px;
 }
 
+nav ul a {
+    padding-right: 25px;
+}
 .nav-wrapper {
-    padding-left: 10px; 
+    padding-left: 20px; 
 }
 .dropdown-content li>a {
-        font-size: 16px;
+    font-size: 16px;
     color: #26a69a;
     display: block;
     line-height: 22px;
     padding: 14px 16px;
     text-shadow: none;
+}
+
+.card .card-action a {
+    color: #e0e0e0; 
+    margin-right: 24px;
+    transition: color .3s ease;
+    text-transform: uppercase
+}
+
+.card-action a {
+    background-color: green;
+    
+}
+
+.card-content a {
+    color: white;
 }
