@@ -31,6 +31,13 @@ def get_recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
+    return render_template("recipes.html", recipes=recipes)
+
+
 @app.route("/recipes_category/<category>")
 def recipes_category(category):
     recipes = list(mongo.db.recipes.find({'category_name': category}))
@@ -113,6 +120,20 @@ def logout():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+@app.route("/load_categories")
+def load_categories():
+    # list of categories to start database off with
+    categories_list = ["Biscuits", "Sweets", "Cupcakes", "Deserts"]
+    # loop through list and upload as category_name to the database
+    for category in categories_list:
+        cat = mongo.db.categories.find_one({'category_name': category})
+        # see if we found it already, if not, load it up
+        if not cat:
+            mongo.db.categories.insert({'category_name': category})
+            print('loaded: ' + category)
+    return redirect(url_for("add_recipe"))
 
 
 @app.route("/add_recipe", methods=["GET", "POST"])
