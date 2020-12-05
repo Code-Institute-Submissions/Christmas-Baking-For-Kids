@@ -103,8 +103,7 @@ def profile(username):
 
     if session["user"]:
         recipes = list(mongo.db.recipes.find({'added_by': session['user']}))
-        return render_template("profile.html", username=username,
-                            recipes=recipes)
+        return render_template("profile.html", username=username, recipes=recipes)
     return redirect(url_for("login"))
 
 
