@@ -120,7 +120,13 @@ h5 {
     font-family: 'Playfair Display', serif;
 }
 
-col .s12 {
-    width: 1130px;
-    margin-left: 100px;
+.row .col.s10 {
+    width: 90%;
+    margin-left: 115px;
+    left: auto;
+    right: auto;
+}
+
+.materialboxed {
+    margin-left: 25px;
 }
