@@ -20,9 +20,11 @@ a {
     font-family: 'Playfair Display', serif;
 }
 .btn-small {
-    margin: 5px;
+    margin: 15px;
 }
-
+strong {
+    
+}
 .collapsible-header .col strong{
     margin: 5px;
     line-height: 42px;
@@ -129,4 +131,14 @@ h5 {
 
 .materialboxed {
     margin-left: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 0;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        margin-left: 10px;
+        font-size: 1.8rem;
+    }
 }
