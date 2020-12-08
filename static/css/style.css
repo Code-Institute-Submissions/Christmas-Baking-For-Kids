@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap")
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5)
 }
@@ -93,8 +95,7 @@ p {
 }
 
 .container {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -122,15 +123,14 @@ h5 {
     font-family: 'Playfair Display', serif;
 }
 
-.row .col.s10 {
-    width: 90%;
-    margin-left: 115px;
-    left: auto;
-    right: auto;
-}
+
 
 .materialboxed {
     margin-left: 25px;
+}
+
+.green.btn.text-shadow.search-btn{
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -141,4 +141,24 @@ h5 {
         margin-left: 10px;
         font-size: 1.8rem;
     }
+    .nav-wrapper {
+        padding-right: 0;
+    }
+    .search-btn{
+        margin-top: .5rem;
+    }
+    .reset-btn, .search-btn{
+        min-width: 125px;
+        margin-left: .1rem;
+    }
+}
+
+@media only screen and (max-width: 778px){
+
+
+}
+
+@media only screen and (max-width: 425px){
+
+
 }
