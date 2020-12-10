@@ -2,3 +2,16 @@
 {% block content %}
 
 <h3 class="center-align green-text text-darken-1">404 Error</h3>
+
+    <div class="row">
+        <div class="col s12">
+            <p> Oops, there seems to be a problem.<br>
+                Click below to return to the home page.<br>
+                <a href="{{ url_for('get_recipes') }}" class="btn-med green darken-1 text-shadow return-btn">
+                    Home</a>
+            </p>
+        </div>
+    </div>
+
+
+{% endblock %}

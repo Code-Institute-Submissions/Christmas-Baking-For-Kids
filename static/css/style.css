@@ -24,9 +24,7 @@ a {
 .btn-small {
     margin: 15px;
 }
-strong {
-    
-}
+
 .collapsible-header .col strong{
     margin: 5px;
     line-height: 42px;
@@ -121,9 +119,8 @@ h5 {
     color: #eee !important;
     margin-left: 90px;
     font-family: 'Playfair Display', serif;
+    font-size: 17px;
 }
-
-
 
 .materialboxed {
     margin-left: 25px;

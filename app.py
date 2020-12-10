@@ -27,6 +27,7 @@ def home():
 
 @app.route("/get_recipes")
 def get_recipes():
+    '''Get the recipes list.'''
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
 
@@ -40,6 +41,7 @@ def search():
 
 @app.route("/recipes_category/<category>")
 def recipes_category(category):
+    '''Finds recipes by category.'''
     recipes = list(mongo.db.recipes.find({'category_name': category}))
     return render_template("recipes.html", recipes=recipes)
 
@@ -52,6 +54,7 @@ def get_categories():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    '''Register the user.'''
     if request.method == "POST":
         # check if the username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -76,6 +79,7 @@ def register():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    '''Login with username and password.'''
     if request.method == "POST":
         # check is username exists in db
         existing_user = mongo.db.users.find_one(
@@ -104,6 +108,7 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    '''Retrieves the users profile.'''
     # grab the sessions user's username from the db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -188,7 +193,19 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
+@app.errorhandler(404)
+def page_not_found(e):
+    # note that we set the 404 status explicitly
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def error_page_not_found(e):
+    # note that we set the 500 status explicitly
+    return render_template('500.html'), 500
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)

@@ -11,10 +11,11 @@
                     <label for="query">Search Recipes</label>
                 </div>
                 <div class="col s12 m4 left-align">
-                <a href="{{ url_for('get_recipes') }}" class="blue darken-1 btn text-shadow reset-btn">Reset</a>
-                <button type="submit" class="green btn text-shadow search-btn">
-                    <i class="fas fa-search left"></i> Search
-                </button>
+                    <button type="submit" class="green btn text-shadow search-btn">
+                        <i class="fas fa-search left"></i> Search
+                    </button>
+                <a href="{{ url_for('get_recipes') }}" class="blue darken-1 btn text-shadow reset-btn">
+                    Reset</a>
                 </div>
             </div>
         </form>
