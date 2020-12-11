@@ -1,6 +1,7 @@
 <div align="center">
-<img src="https://i.ibb.co/7khKrDD/gingerbreadmen.jpg" href="https://christmas-baking-for-kids.herokuapp.com/" target="_blank" rel="noopener" alt="Christmas Baking for Kids"
-    aria-label="Christmas Baking for Kids" />
+<img src="https://i.ibb.co/7khKrDD/gingerbreadmen.jpg" height="300px" href="https://christmas-baking-for-kids.herokuapp.com/" target="_blank" rel="noopener" alt="Christmas Baking for Kids"
+    aria-label="Christmas Baking for Kids" /><br>
+<h2 green darken-1>Christmas Baking For Kids</h2>
 </div> 
 
 ## Introduction
@@ -13,7 +14,7 @@
 [Christmas Baking](https://christmas-baking-for-kids.herokuapp.com) was created by Lee-Ann Clark. For all the parents who love baking and who enjoy sharing the kitchen with kids who like to experement and find their own way in the world of baking.
 
 As a single mom who has a very industrious daughter, finding new things to make, bake and try is always a challenge. Having easy to follow recipes which are fun to make and delicious to eat, keeps young minds busy.
-Being a mom who travels to different countries, adding new and exciting recipes that can be accessed easily adds new exciting choices for baking.
+Being a mom who travels to different countries, adding new and flavorsome recipes that can be accessed easily adds new exciting choices for baking.
 
 ## Table of Contents
 1. [UX](#ux)
