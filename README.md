@@ -1,7 +1,7 @@
 <div align="center">
+<h1>Christmas Baking For Kids</h1>
 <img src="https://i.ibb.co/7khKrDD/gingerbreadmen.jpg" height="300px" href="https://christmas-baking-for-kids.herokuapp.com/" target="_blank" rel="noopener" alt="Christmas Baking for Kids"
     aria-label="Christmas Baking for Kids" /><br>
-<h2 green darken-1>Christmas Baking For Kids</h2>
 </div> 
 
 ## Introduction
@@ -26,9 +26,7 @@ Being a mom who travels to different countries, adding new and flavorsome recipe
         - [Visitor Stories](#visitor-stories)
     - [Design Choices](#design-choices)
     - [Wireframes](#wireframes)
-    - [Flowchart](#flowchart)
-    - [PDF](#pdf)
-
+    
 2. [Features](#features)
     - [Existing Features](#existing-features)
         - [Elements on every Page](#elements-on-every-page)
@@ -152,4 +150,45 @@ As a visitor to Christmas Baking For Kids I would expect/want/need:
 
 7.  As a user accessing this site from smaller devices such as a mobile phone or tablet, I want the site to be responsive so that it is still easy to navigate. 
 
+## Design Choices
 
+Christmas Baking For Kids has a Christmas and family friendly feel to it. The emphasis was on providing easy to follow information in an understandable way for any age group. 
+The following design choices were made with this in mind:
+
+### Fonts
+
+### Colours
+
+### Styling
+
+## Wireframes
+
+# Features
+ 
+## Existing Features
+
+### Elements on every page
+- Navbar
+    - The navigation bar features the Christmas Baking For Kids logo in the top left corner.
+
+    - For visitors to the site who are not logged in, list items links are available for them to use.
+        1. Home (The logo itself)
+        2. Recipes (drop down menu of categories)
+        3. Log In
+        4. Register 
+
+    - For users who are logged in, the list items are as follows: 
+        1. Home (The logo itself)
+        2. Recipes (drop down menu of categories)
+        3. Profile
+        4. New Recipe
+        5. Log Out
+
+- Python determines if the user is logged in or not by checking `if 'user' in session` and passes this data to Jinja to display the correct welcome message on the profile page to the user.
+- The navbar is collapsed into a burger icon on small and medium screens, so that menu items do not start overlapping content or headings. 
+
+- Footer
+    - The footer features:
+        - A list of category links users might need when viewing the footer and wanting to return to a perticular page.
+        - A thank you message. 
+        - Copyright information.
