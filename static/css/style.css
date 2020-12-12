@@ -1,50 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
-
 .text-shadow {
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5)
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
 }
-
 .flashes h4 {
     line-height: 2;
 }
-
 .parallax-container {
     position: relative;
     overflow: hidden;
     height: 300px;
-    background-size: cover;
 }
-
 a.brand-logo {
     font-family: 'Playfair Display', serif;
 }
-
 a {
     font-family: 'Playfair Display', serif;
 }
 .btn-small {
     margin: 15px;
 }
-
-.collapsible-header .col b{
+.collapsible-header .col b {
     margin: 5px;
     line-height: 42px;
 }
-
 nav.nav-extended .nav-wrapper {
     height: 68px;
 }
-
 nav ul a {
     padding-right: 25px;
 }
 .nav-wrapper {
     padding-left: 5em;
     padding-right: 3em;
-    font-size: 18px; 
+    font-size: 18px;
 }
-
-.dropdown-content li>a {
+.dropdown-content li > a {
     font-size: 16px;
     color: #26a69a;
     display: block;
@@ -52,101 +42,86 @@ nav ul a {
     padding: 14px 16px;
     text-shadow: none;
 }
-
 p {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     margin-left: 150px;
 }
-
 .p1 {
     font-weight: 400;
 }
-
-.sub-header{
+.sub-header {
     color: white;
-    padding: 1rem .5rem!important;
+    padding: 1rem .5rem !important;
     font-size: 24px;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
 }
-
 .card .card-action a {
-    color: #e0e0e0; 
+    color: #e0e0e0 !important;
     margin-right: 24px;
     transition: color .3s ease;
-    text-transform: uppercase
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: .5rem .75rem;
+    width: 100%;
 }
-
 .card-action a {
     background-color: green;
-    
 }
-
 .card-content a {
     color: white;
 }
-
 .card.horizontal {
     width: 1100px;
     margin-left: 100px;
 }
-.multi-line-user-input p{
+.multi-line-user-input p {
     white-space: pre-line;
 }
-
-img.materialboxed{
-    width: auto ;
-    max-width: 75% ;
-    height: auto ;
+img.materialboxed {
+    width: auto;
+    max-width: 75%;
+    height: auto;
 }
-
 .col.s12.m4 {
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
     width: 285px;
 }
-
 .container {
     margin: 0 auto;
     width: 100%;
 }
-
 h2 {
     padding-left: 2.5em;
     font-family: 'Playfair Display', serif;
 }
-
 h3 {
     font-family: 'Playfair Display', serif;
 }
 h5 {
     margin-left: 50px;
 }
-
 .grey-text.text-lighten-4 {
     color: #f5f5f5 !important;
     margin-left: 25px;
     font-family: 'Playfair Display', serif;
 }
-
 .grey-text.text-lighten-3 {
     color: #eee !important;
     margin-left: 90px;
     font-family: 'Playfair Display', serif;
     font-size: 17px;
 }
-
 .materialboxed {
     margin-left: 25px;
 }
-
-.green.btn.text-shadow.search-btn{
+.green.btn.text-shadow.search-btn {
     margin-top: 0;
 }
-
-
 .multi-line-user-input p {
     white-space: pre-line;
 }
@@ -159,7 +134,6 @@ p {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
-
 p {
     display: block;
     margin-block-start: 1em;
@@ -167,10 +141,9 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-ul:not(.browser-default)>li {
+ul:not(.browser-default) > li {
     list-style-type: none;
 }
-
 li {
     text-align: -webkit-match-parent;
 }
@@ -178,11 +151,24 @@ ul:not(.browser-default) {
     padding-left: 0;
     list-style-type: none;
 }
-
 ul {
     list-style-type: disc;
 }
-
+nav .brand-logo {
+    left: 0;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    margin-left: 10px;
+    font-size: 1.8rem;
+}
+.padding-1 {
+    padding: 1rem 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.nav-wrapper {
+    padding-right: 0;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 320px) {
     .card.horizontal {
@@ -197,16 +183,11 @@ ul {
     p {
         display: none;
     }
-    .card .card-action a {
-    color: #e0e0e0 !important;
-    margin-right: 20px;
-    transition: color .3s ease;
-    text-transform: uppercase;
-    display: block;
-    text-align: center;
-    padding: .5rem .75rem;
-    width: 100%;
-}
+    .card.card-action a {
+        color: white;
+        margin-right: 20px;
+        transition: color .3s ease;
+        text-transform: uppercase;
     }
     .card-action a {
         background-color: green;
@@ -227,13 +208,6 @@ ul {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    nav .brand-logo {
-        left: 0;
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-        margin-left: 140px;
-        font-size: 30px;
-    }
     a.brand-logo {
         font-family: 'Playfair Display', serif;
         font-size: 25px;
@@ -254,51 +228,34 @@ ul {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    nav .brand-logo {
-        left: 0;
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-        margin-left: 155px;
-        font-size: 30px;
-    }
     .card.horizontal {
-    width: 720px;
-    margin-left: 20px;
+        width: 720px;
+        margin-left: 20px;
     }
     p {
         display: block;
-        margin-left:25px;
+        margin-left: 25px;
     }
     .card-action a {
-    background-color: green;
-    padding: 4px;
+        background-color: green;
+        padding: 4px;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    nav .brand-logo {
-        left: 0;
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-        margin-left: 30px;
-        font-size: 30px;
-    }
-    .nav-wrapper {
-        padding-right: 0;
-    }
     .card.horizontal {
         margin-left: 50px;
         width: 900px;
     }
     .card.horizontal .card-image img {
-    border-radius: 2px 0 0 2px;
-    max-width: 85%;
-    width: auto;
+        border-radius: 2px 0 0 2px;
+        max-width: 85%;
+        width: auto;
     }
-    .search-btn{
+    .search-btn {
         margin-top: .5rem;
     }
-    .reset-btn, .search-btn{
+    .reset-btn, .search-btn {
         min-width: 125px;
         margin-left: .1rem;
     }
@@ -309,3 +266,4 @@ ul {
         margin-left: 25px;
     }
 }
+
