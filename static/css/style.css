@@ -241,6 +241,7 @@ ul {
         border-radius: 0 0 2px 2px;
     }
     p {
+        display: block;
         font-family: 'Playfair Display', serif;
         font-size: 20px;
     }
@@ -259,6 +260,7 @@ ul {
     margin-left: 20px;
     }
     p {
+        display: block;
         margin-left:25px;
     }
     .card-action a {
@@ -266,7 +268,6 @@ ul {
     padding: 4px;
     }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     nav .brand-logo {
@@ -278,12 +279,6 @@ ul {
     }
     .nav-wrapper {
         padding-right: 0;
-    }
-    
-    p {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    margin-left: 40px;
     }
     .card.horizontal {
         margin-left: 50px;
@@ -302,7 +297,9 @@ ul {
         margin-left: .1rem;
     }
     p {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    margin-left: 25px;
+        display: block;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        margin-left: 25px;
     }
+}
