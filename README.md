@@ -5,6 +5,13 @@
 </div> 
 
 ## Introduction
+<div align="center">
+<h1>Christmas Baking For Kids</h1>
+<img src="https://i.ibb.co/7khKrDD/gingerbreadmen.jpg" height="300px" href="https://christmas-baking-for-kids.herokuapp.com/" target="_blank" rel="noopener" alt="Christmas Baking for Kids"
+    aria-label="Christmas Baking for Kids" /><br>
+</div> 
+
+## Introduction
 
 <div align="center">
     <img src="https://i.ibb.co/whcvV9B/home-page.png" href="https://christmas-baking-for-kids.herokuapp.com/" target="_blank" rel="noopener" alt="Image of how the home page will look on all screen sizes" aria-label="Image of how the home page will look on all screen sizes" />
@@ -214,4 +221,62 @@ Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye
 
 ### Home Page
 
-<div align="center">
+**Hero Image**
+- The Christmas Baking For Kids home page features a cheerful and colorful hero image of every childs favorite. Gingerbreadmen. I chose this image because when you see gingerbreadmen you think of christmas and the kids love making them.
+  This image is coded as a background-image in css and set to `background-size: cover;` so that it is responsive and doesnt distort or stretch. 
+
+**Horizontal Cards**
+- Each horizontal card on the home page gives the user some idea of what categories they will find. There is am image of the category, for example biscuits and next to it a little verse relating
+  to the category. Below this is a link to the page should you decide to go to that perticular category from the horizontal card.
+
+**Footer**
+- The footer is in the same shade of green as the navbar with a darker shade of green for the copyright at the bottom of the page. There is a little thank you message to the user and the hope that they added some recipes.
+  There is a Quick links section so that you can return to any of the category pages should you choose from the footer itself. The footer appears at the base of all pages.
+
+### Recipes Page
+
+**Dropdown List**
+- This dropdown list is found in the navbar. It is a dropdown list of all categories of recipes found in the recipe book.At the top is `ALL`, then `Biscuits`, `Sweets`, `Cupcakes` and then `Desserts. 
+  Each selection takes you to the recipe page of all recipes added in that category in the book.
+
+**Search Bar**
+- On the top of each recipe page is a Search Bar that was coded in using `Text Index Searching`. The search bar has a search button and a reset button on the left side of the search bar.
+  The user can search through a set of parameters such as `Recipe Name` and  `Ingredients` to find their favorite recipe.
+
+**Horizontal Recipe Cards**
+- Each horizontal recipe card on the recipe page whether it is for ALL recipes or a perticular category have the same layout. They have the green that is consistent throughout the site as a background for 
+  the recipe name. The card then has an image that expands when clicked on and is coded as `Materialboxed` from materialize. Next to the image is the `Cooking Time` for the recipe. Below this is the information of who added the recipe. `Added By` 
+  and then the card also gives the information of who the recipe is credited to. `Credit To`.
+
+### Log In Page
+
+- The log in page features a simple **form** where the user enters their username and their password. If the user enters an incorrect password or username a flash message will inform the user of this.
+  The user once logged in will recieve a welcome message and be directed to their profile page. 
+- The profile page a page for that spercific user. All the recipes that this user has ever added will be on this page. This page is unique to the user.
+- The user has the option on this page to edit or delete recipes. These buttons will appear on only the session users profile page on the recipes. The user will not be able to edit or delete recipes that 
+  were not added by the user themselves.
+- If the user does not have a username or password the user is directed to the register page.
+
+**Register Page**
+- The Register page is also a simple **form** where by the user has to choose a username and password. Once the user name and password have been entered and are not duplicates of what is already there, the 
+  site will direct you to your blank profile page. Now you are ready to start adding recipes.
+
+**New Recipes**
+- This can only be accessed if you are logged in as a user.
+- The New Recipes page is a **form** that gives the user the selection of which caregory they want the recipe to show in. The user then has to correctly insert the image URL for their recipe. This has been tested
+  so that the input needs to be correct otherwise a **404** page will appear.
+-The user then needs to complete the cooking time, how many the recipe makes and then all the ingredients and the method need completing. They can then add their name to the recipe and hit the `Add Recipe` button 
+  at the bottom of the page. Upon succsessful upload of the recipe a message will show saying the recipe was successfully uploaded.
+- Validation of the `<input>` fields is handled in different ways.The input `type` attributes are set to `text`, and `url`.
+- Limits are placed on both min and max lengths of input accepted.
+
+**Editing Recipe**
+- Once a new recipe has been added and the user wants to edit his /her recipe, they can log in to their profile page and on their recipes will be 2 buttons.
+  One for `Edit` and the other for `Delete`. The edit button allows the user to edit the recipe. Upon successful completion a message will state that the recipe
+  has beed successfully edited and the user is returned to the recipe page. Should the user decide that they want to **DELETE** the recipe and they click on deletd,
+  a modal will appear with a message asking if the user is sure that want to delete this? if the user clicks on the "Yes" button below the recipe will be deleted. If they 
+  click on the "NO" button the client is returned to the edit page.
+
+### 404 Page
+
+### 500 Page
