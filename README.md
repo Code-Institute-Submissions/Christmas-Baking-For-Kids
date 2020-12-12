@@ -112,13 +112,13 @@ Business user goals are:
 Christmas Baking For Kids meets these user needs in that:
 
 - The login page provides the user access to the recipe book to be able to add their own recipes. The user interface for the input on this page is carefully controlled in that
-the user has to add a user name and password, both of which are required to move forward.
+  the user has to add a user name and password, both of which are required to move forward.
 - The profile page shows the user his/her recipes that have been added. The user also has the option to go back into their own profile and edit or delete their own recipes.
 - The Add-Recipe page clearly structured and laid out in an easy to understand way.The user has the option to Add their Recipe, if they are satissfied they can
-then save their recipe or delete it.
+  then save their recipe or delete it.
 - The user interface for the input of recipe data on the add-recipe page has been controlled to validate input. For example the correct url format is required for the image input.
-The fields for name of recipe and recipe ingredients and method are required so that information needs to be added correctly.
-Setting input field types to `minlength`, `maxlength`,`number`, `url` etc makes sure the user is prompted when the data they have added is incorrect.
+  The fields for name of recipe and recipe ingredients and method are required so that information needs to be added correctly.
+  Setting input field types to `minlength`, `maxlength`,`number`, `url` etc makes sure the user is prompted when the data they have added is incorrect.
 
 - The recipe page then shows the user all listed recipes including their own. 
 
@@ -148,7 +148,7 @@ As a visitor to Christmas Baking For Kids I would expect/want/need:
 
 6. As a parent I want my child to enjoy choosing the recipes and understanding the instructions.
 
-7.  As a user accessing this site from smaller devices such as a mobile phone or tablet, I want the site to be responsive so that it is still easy to navigate. 
+7. As a user accessing this site from smaller devices such as a mobile phone or tablet, I want the site to be responsive so that it is still easy to navigate. 
 
 ## Design Choices
 
@@ -157,9 +157,28 @@ The following design choices were made with this in mind:
 
 ### Fonts
 
+ The primary font `Playfair Display` was chosen for the main text on the site as it is easy to read both when printed and in cursive. 
+ The site will have all age-groups reading it so the printing needs to be clear and easy to understand.
+
 ### Colours
 
+Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye and goes with all images that are added.
+
+- The navbar background colour is a soft green colour, dark enough to provide contrast with the white headings, while darkening to a darker green when hovering over the nav links.
+- The Welcome heading is done in Green which stands out on the crips white background of the page.
+- The category cards have clear black writing on them and a link to their page at the bottom of the card with a green background.
+  The writing in the green background turns white when you hover over it.
+- In the footer a green was again used, setting the footer apart from the rest of the content. The writing in the footer is an off white which is easy on the eye. The base of the footer
+  where the copy right is has a darker green to make it stand out a little more. 
+
 ### Styling
+
+- All **buttons** on the site fit the materialize button styling in size and shape, I kept the colors of green red and blue for the Christmas theme. 
+- Materialize **cards** were utilized on the home page to display the category selection, with a link to each category selection page on it. 
+- hover effects
+    - Some subtle **shadows** have been added to the nav bar and category cards, to give them depth on the page. The color change on the navbar 
+    on hover, gives the user a positive user experience in highlighting the section of the site they are hovering over.
+
 
 ## Wireframes
 
