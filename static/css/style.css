@@ -181,24 +181,118 @@ ul:not(.browser-default) {
 ul {
     list-style-type: disc;
 }
-@media only screen and (max-width: 1200px){
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) {
+    .card.horizontal {
+        width: 290px;
+        margin-left: 20px;
+    }
+    h2 {
+        padding-left: 35px;
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+    }
     p {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    margin-left: 15px;
+        display: none;
+    }
+    .card.card-action a{
+        color: white;
+        margin-right: 20px;
+        transition: color .3s ease;
+        text-transform: uppercase;
+    }
+    .card-action a {
+        background-color: green;
+        padding: 2px;
+    }
+    .card.card-content {
+        display: none;
+    }
+    h5 {
+        margin-left: 20px;
+    }
+    .grey-text.text-lighten-3 {
+        color: #eee !important;
+        margin-left: 30px;
+        font-family: 'Playfair Display', serif;
+        font-size: 17px;
     }
 }
-
-@media only screen and (max-width: 992px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     nav .brand-logo {
         left: 0;
         -webkit-transform: translateX(0%);
         transform: translateX(0%);
-        margin-left: 10px;
-        font-size: 1.8rem;
+        margin-left: 140px;
+        font-size: 30px;
+    }
+    a.brand-logo {
+        font-family: 'Playfair Display', serif;
+        font-size: 25px;
+    }
+    .card.horizontal {
+        width: 550px;
+        margin-left: 20px;
+    }
+    .card .card-content {
+        padding: 24px;
+        border-radius: 0 0 2px 2px;
+    }
+    p {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    nav .brand-logo {
+        left: 0;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        margin-left: 155px;
+        font-size: 30px;
+    }
+    .card.horizontal {
+    width: 720px;
+    margin-left: 20px;
+    }
+    p {
+        margin-left:25px;
+    }
+    .card-action a {
+    background-color: green;
+    padding: 4px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    nav .brand-logo {
+        left: 0;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        margin-left: 30px;
+        font-size: 30px;
     }
     .nav-wrapper {
         padding-right: 0;
+    }
+    
+    p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-left: 40px;
+    }
+    .card.horizontal {
+        margin-left: 50px;
+        width: 900px;
+    }
+    .card.horizontal .card-image img {
+    border-radius: 2px 0 0 2px;
+    max-width: 85%;
+    width: auto;
     }
     .search-btn{
         margin-top: .5rem;
@@ -210,22 +304,5 @@ ul {
     p {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    margin-left: 15px;
-    }
-}
-
-@media only screen and (max-width: 778px){
-    p {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    margin-left: 15px;
-    }
-
-}
-
-@media only screen and (max-width: 425px){
-    p {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    margin-left: 15px;
+    margin-left: 25px;
     }
