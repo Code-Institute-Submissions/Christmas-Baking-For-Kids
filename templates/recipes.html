@@ -20,24 +20,39 @@
             </div>
         </form>
     </div>
-
     <div class="row">
         <div class="col s12 m10 offset-m1">
             <ul class="collapsible">
                 {% for recipe in recipes %}
+                <div class="col s12 green darken-1">
+                    <div class="sub-header">{{ recipe.recipe_name }}</div>
+                </div>
                 <li>
                     <div class="collapsible-header">
                         <div class="col s6">
                             <i class="fas fa-caret-down"></i>
                                 <img class="materialboxed" width="150" src="{{ recipe.recipe_image }}">
+                        </div>
+                        <div class="col s6">
+                            <div class="col s7 multi-line-user-input">
+                            <div class="padding-1">
+                                <i class="far fa-clock prefix green-text text-darken-1"></i><b>Cooking
+                                    Time: </b> {{ recipe.cooking_time }}
+                            </div>
+                            <div class="padding-1">
+                                <i class="far fa-user prefix green-text text-darken-1"></i><b>Added By: </b>
+                                    {{ recipe.added_by }}
+                            </div>
+                            <div class="padding-1">
+                                <i class="far fa-user prefix green-text text-darken-1"></i><b>Credit To: </b>
+                                    {{ recipe.credit_to }}
+                            </div>
                             {% if session.user|lower == recipe.added_by|lower %}
                                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green accent-4">Edit</a>
                                 <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red accent-3">Delete</a>
                             {% endif %}
                         </div>
-                        <div class="col s6">
-                            <b>{{ recipe.recipe_name }}</b>
-                        </div>
+                    </div>
                     </div>
                     <div class="collapsible-body multi-line-user-input">
                         <b>{{ recipe.category_name }}</b>

@@ -25,7 +25,7 @@ a {
     margin: 15px;
 }
 
-.collapsible-header .col strong{
+.collapsible-header .col b{
     margin: 5px;
     line-height: 42px;
 }
@@ -61,6 +61,15 @@ p {
 .p1 {
     font-weight: 400px;
 }
+
+.sub-header{
+    color: white;
+    padding: 1rem .5rem!important;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
 .card .card-action a {
     color: #e0e0e0; 
     margin-right: 24px;
@@ -137,8 +146,6 @@ h5 {
 }
 
 
-element.style {
-}
 .multi-line-user-input p {
     white-space: pre-line;
 }

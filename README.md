@@ -176,7 +176,7 @@ Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye
 - All **buttons** on the site fit the materialize button styling in size and shape, I kept the colors of green red and blue for the Christmas theme. 
 - Materialize **cards** were utilized on the home page to display the category selection, with a link to each category selection page on it. 
 - hover effects
-    - Some subtle **shadows** have been added to the nav bar and category cards, to give them depth on the page. The color change on the navbar 
+    - Some subtle **shadows** have been added to the nav bar and category cards, to give them depth on the page. The **color-change** on the navbar 
     on hover, gives the user a positive user experience in highlighting the section of the site they are hovering over.
 
 
@@ -211,3 +211,7 @@ Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye
         - A list of category links users might need when viewing the footer and wanting to return to a perticular page.
         - A thank you message. 
         - Copyright information.
+
+### Home Page
+
+<div align="center">
