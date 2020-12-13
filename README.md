@@ -228,6 +228,7 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
 <div align="center">
 <img src="https://i.ibb.co/f8NmPtq/Recipes-Page.png" alt="Christmas Baking For Kids Recipes Page page on all major screen sizes" >
 </div>
+<br>
 **Dropdown List**
 - This dropdown list is found in the navbar. It is a dropdown list of all categories of recipes found in the recipe book.At the top is `ALL`, then `Biscuits`, `Sweets`, `Cupcakes` and then `Desserts. 
   Each selection takes you to the recipe page of all recipes added in that category in the book.
@@ -245,6 +246,7 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
 <div align="center">
 <img src="https://i.ibb.co/yY2ksXm/Login-Page.png" alt="Christmas Baking For Kids Login Page page on all major screen sizes" >
 </div>
+<br>
 - The log in page features a simple **form** where the user enters their username and their password. If the user enters an incorrect password or username a flash message will inform the user of this.
   The user once logged in will recieve a welcome message and be directed to their profile page. 
 - The profile page a page for that spercific user. All the recipes that this user has ever added will be on this page. This page is unique to the user.
@@ -260,13 +262,14 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
 <div align="center">
 <img src="https://i.ibb.co/XtgpJ6c/Add-Recipe.png" alt="Christmas Baking For Kids Add Recipe Page page on all major screen sizes" >
 </div>
+<br>
 - This can only be accessed if you are logged in as a user.
 - The New Recipes page is a **form** that gives the user the selection of which caregory they want the recipe to show in. The user then has to correctly insert the image URL for their recipe. This has been tested
   so that the input needs to be correct otherwise a **404** page will appear.
 -The user then needs to complete the cooking time, how many the recipe makes and then all the ingredients and the method need completing. They can then add their name to the recipe and hit the `Add Recipe` button 
   at the bottom of the page. Upon succsessful upload of the recipe a message will show saying the recipe was successfully uploaded.
 - Validation of the `<input>` fields is handled in different ways.The input `type` attributes are set to `text`, and `url`.
-- Limits are placed on both min and max lengths of input accepted.
+- Limits are placed on both min and max lengths of input accepted.<br>
 
 **Editing Recipe**
 - Once a new recipe has been added and the user wants to edit his /her recipe, they can log in to their profile page and on their recipes will be 2 buttons.
