@@ -37,8 +37,6 @@ Being a mom who travels to different countries, adding new and flavorsome recipe
 3. [Information Architecture](#information-architecture)
     - [Database choice](#database-choice)
     - [Data Storage Types](#data-storage-types)
-    - [Collections Data Structure](#collections-data-structure)
-        - [Users Collection](#users-collection)
 
 4. [Technologies Used](#technologies-used)
 
@@ -155,8 +153,10 @@ The following design choices were made with this in mind:
  The site will have all age-groups reading it so the printing needs to be clear and easy to understand.
 
 ### Colours
-
-Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye and goes with all images that are added.
+<div align="center">
+    <img src="https://i.ibb.co/Xpm5Nf5/color-palette.png" alt="Christmas Baking Color Palette" aria-label="Christmas Baking Color Palette" />
+</div>
+Being a Christmas recipe book, Green is the color I chose. It is easy on the eye and goes with all images that are added.
 
 - The navbar background colour is a soft green colour, dark enough to provide contrast with the white headings, while darkening to a darker green when hovering over the nav links.
 - The Welcome heading is done in Green which stands out on the crips white background of the page.
@@ -175,6 +175,10 @@ Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye
 
 
 ## Wireframes
+
+
+
+
 
 # Features
  
@@ -221,7 +225,9 @@ Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye
   There is a Quick links section so that you can return to any of the category pages should you choose from the footer itself. The footer appears at the base of all pages.
 
 ### Recipes Page
-
+<div align="center">
+<img src="https://i.ibb.co/f8NmPtq/Recipes-Page.png" alt="Christmas Baking For Kids Recipes Page page on all major screen sizes" >
+</div>
 **Dropdown List**
 - This dropdown list is found in the navbar. It is a dropdown list of all categories of recipes found in the recipe book.At the top is `ALL`, then `Biscuits`, `Sweets`, `Cupcakes` and then `Desserts. 
   Each selection takes you to the recipe page of all recipes added in that category in the book.
@@ -236,7 +242,9 @@ Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye
   and then the card also gives the information of who the recipe is credited to. `Credit To`.
 
 ### Log In Page
-
+<div align="center">
+<img src="https://i.ibb.co/yY2ksXm/Login-Page.png" alt="Christmas Baking For Kids Login Page page on all major screen sizes" >
+</div>
 - The log in page features a simple **form** where the user enters their username and their password. If the user enters an incorrect password or username a flash message will inform the user of this.
   The user once logged in will recieve a welcome message and be directed to their profile page. 
 - The profile page a page for that spercific user. All the recipes that this user has ever added will be on this page. This page is unique to the user.
@@ -249,6 +257,9 @@ Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye
   site will direct you to your blank profile page. Now you are ready to start adding recipes.
 
 **New Recipes**
+<div align="center">
+<img src="https://i.ibb.co/XtgpJ6c/Add-Recipe.png" alt="Christmas Baking For Kids Add Recipe Page page on all major screen sizes" >
+</div>
 - This can only be accessed if you are logged in as a user.
 - The New Recipes page is a **form** that gives the user the selection of which caregory they want the recipe to show in. The user then has to correctly insert the image URL for their recipe. This has been tested
   so that the input needs to be correct otherwise a **404** page will appear.
@@ -267,3 +278,53 @@ Being a Chtistmas recipe book, Green is the color i chose. It is easy on the eye
 ### 404 Page
 
 ### 500 Page
+
+## Features Left to Implement
+
+Admin account 
+- Give myself (or any other administrator of Christmas Baking For Kids) special permission to access and or change data in the database from a Christmas Baking For Kids interface, 
+  rather than having to access the data directly in MongoDB.
+- Give admin the ability to view, edit and delete any Recipe from database.
+
+The Features Left To Implement is a section that will grow in time as the site itself grows.
+
+# Information Architecture
+
+### Database Choice
+
+As this website is a student project and where i am in the course my only opportunity is use NoSQL. 
+In order to gain experience in using NoSQL this project uses the NoSQL database MongoDB. 
+Easy access to relational data was made possible as inner objects were used inside the data structure so it could be easily accessed and looped through where needed.
+
+### Data Storage Types
+
+The types of data stored in MongoDB for my project are:
+- ObjectId
+- String
+- Boolean
+- Object
+
+# Technologies Used
+
+### Tools
+- [Gitpod](https://www.gitpod.io//) is the IDE used for developing this project. 
+- [Imgbb](https://imgbb.com) to store all external images for this project.
+- [Git](https://git-scm.com/) to handle version control.
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is the database for this project
+- [GitHub](https://github.com/) to store and share all project code remotely. 
+- [Browserstack](https://www.browserstack.com/) to test functionality on all browsers and devices.
+- [Techsini](http://techsini.com/) to create the images in this readme file of each page displayed on different screen sizes.
+
+### Libraries
+- [JQuery](https://jquery.com) to simplify DOM manipulation.
+- [Jasmine](https://jasmine.github.io/) to run automated tests on JavaScript and jQuery code.
+- [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery) to make it possible to test jQuery code using Jasmine.
+- [Materialize](https://materializecss.com/) to simplify the structure of the website and make the website responsive.
+- [FontAwesome](https://fontawesome.com/) to provide icons for this site.
+- [Google Fonts](https://fonts.google.com/) to style the website fonts.
+- [PyMongo](https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible.
+- [Flask](https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages.
+- [Jinja](http://jinja.pocoo.org/docs/2.11/) to simplify displaying data from the backend of this project smoothly and effectively in html.
+
+### Languages
+- This project uses HTML, CSS, JQuery and Python programming languages.
