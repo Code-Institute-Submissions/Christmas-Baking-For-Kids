@@ -3,19 +3,6 @@
 <img src="https://i.ibb.co/7khKrDD/gingerbreadmen.jpg" height="300px" href="https://christmas-baking-for-kids.herokuapp.com/" target="_blank" rel="noopener" alt="Christmas Baking for Kids"
     aria-label="Christmas Baking for Kids" /><br>
 </div> 
-
-## Introduction
-<div align="center">
-<h1>Christmas Baking For Kids</h1>
-<img src="https://i.ibb.co/7khKrDD/gingerbreadmen.jpg" height="300px" href="https://christmas-baking-for-kids.herokuapp.com/" target="_blank" rel="noopener" alt="Christmas Baking for Kids"
-    aria-label="Christmas Baking for Kids" /><br>
-</div> 
-
-## Introduction
-
-<div align="center">
-    <img src="https://i.ibb.co/whcvV9B/home-page.png" href="https://christmas-baking-for-kids.herokuapp.com/" target="_blank" rel="noopener" alt="Image of how the home page will look on all screen sizes" aria-label="Image of how the home page will look on all screen sizes" />
-</div>
 <br>
 
 [Christmas Baking](https://christmas-baking-for-kids.herokuapp.com) was created by Lee-Ann Clark. For all the parents who love baking and who enjoy sharing the kitchen with kids who like to experement and find their own way in the world of baking.
