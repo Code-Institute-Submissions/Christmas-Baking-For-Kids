@@ -334,7 +334,22 @@ The types of data stored in MongoDB for my project are:
 
 # Testing 
 
-Testing information can be found in separate [testing.md](testing.md) file
+## Programs used for testing
+
+- [Sauce Lab](https://saucelabs.com/) Automation Testing.
+    - Sauce Lab report [here](https://i.ibb.co/VW5wkN6/cross-browser-test.png)
+    - I logged in to Sauce Labs and ran the test on each browser to see how the website faired.
+      The report came back with no errors on any of the browsers.
+
+
+- [Perfecto](https://testingcloud.app.perfectomobile.com/) Manual Mobile Testing
+    - Perfecto manual testing report [here](https://i.ibb.co/KmNnBjY/mobile-phones-tested.png)
+    - I logged into Perfecto and manually selected the mobile devices to run the tests on.
+        - On each device i entered Christmas Baking For Kids URL, on all devices chosen it logged in.
+        - I then mannually selected the links for the categories to see if they all went to the correct pages.They did.
+        - I logged in as a returning user tested the password and username to see if they worked , no errors.
+        - I registered as a new user to see that the username and password worked. No errors.
+
 
 # Deployment
 
@@ -392,6 +407,7 @@ pip -r requirements.txt.
 ```
 python3 app.py
 ```
+9. Remember to /load_categories to be able to see the recipe categories
 
 ## Heroku Deployment
 
