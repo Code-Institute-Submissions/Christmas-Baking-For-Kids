@@ -331,3 +331,150 @@ The types of data stored in MongoDB for my project are:
 
 ### Languages
 - This project uses HTML, CSS, JQuery and Python programming languages.
+
+# Testing 
+
+Testing information can be found in separate [testing.md](testing.md) file
+
+# Deployment
+
+## How to run this project locally
+
+To run this project on your own IDE follow the instructions below:
+
+Ensure you have the following tools: 
+- An IDE such as [Gitpod](https://gitpod.io/)
+
+The following **must be installed** on your machine:
+- [Python 3](https://www.python.org/downloads/)
+- [Git](https://github.com)
+- An account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or MongoDB running locally on your machine. 
+    - How to set up your Mongo Atlas account [here](https://docs.atlas.mongodb.com/).
+
+### Instructions
+1. Save a copy of the github repository located at https://github.com/Lee-AnnC/Christmas-Baking-For-Kids by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder.
+   If you have Git installed on your system, you can clone the repository with the following command.
+```
+git clone https://github.com/Lee-AnnC/Christmas-Baking-For-Kids
+```
+
+2. If possible open a terminal session in the unzip folder or cd to the correct location.
+
+3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment.
+
+Enter the command:
+```
+python -m .venv venv
+```  
+_NOTE: Your Python command may differ, such as python3 or py_
+
+4. Activate the .venv with the command:
+```
+.venv\Scripts\activate 
+```
+_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
+
+4. If needed, Upgrade pip locally with
+```
+pip install --upgrade pip.
+```
+
+5. Install all required modules with the command 
+```
+pip -r requirements.txt.
+```
+
+6. In your local IDE create a file called `.flaskenv`.
+
+7. Inside the .flaskenv file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. 
+
+8. You can now run the application with the command
+```
+python3 app.py
+```
+
+## Heroku Deployment
+
+To deploy Christmas-Baking-For-Kids to heroku, take the following steps:
+
+1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+
+2. Create a `Procfile` with the terminal command `echo web: python app.py > Procfile`.
+
+3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+
+3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set your region to Europe.
+
+4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+
+5. Confirm the linking of the heroku app to the correct GitHub repository.Make sure this is your Repository name.
+
+6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+7. Set the following config vars:
+
+| Key | Value |
+ --- | ---
+DEBUG | FALSE
+IP | 0.0.0.0
+MONGO_URI | `mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority`
+PORT | 5000
+SECRET_KEY | `<your_secret_key>`
+
+- To get you MONGO_URI read the MongoDB Atlas documentation [here](https://docs.atlas.mongodb.com/)
+
+8. In the heroku dashboard, click "Deploy".
+
+9. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
+
+10. The site is now successfully deployed.
+
+# Credits
+
+## Content
+
+- The text, images, links and other data in the database was sourced from various websites including but not limited to
+
+    - [Kitchen Warehouse](https://blog.kitchenwarehouse.com.au)
+    - [Taste](https://www.taste.com.au/)
+    - [Like Mother Like Daughter](https://lmld.org)
+    - [Favorite Family Recipes](https://favfamilyrecipes.com)
+    - [Artful Parent](https://artfulparent.com)
+    - [Your Cup Of Cake](https://www.yourcupofcake.com)
+    - [Olive](https://olivemagazine.com)
+    - [Laura loves cakes](https://lauralovescakes.blogspot.com)
+    - [Two Sisters](https://www.twosisterscrafting.com/)
+    - [A Table Full Of Joy](https://www.atablefullofjoy.com)
+
+- All other text on Christmas Baking For Kids site was written by me.
+
+## Media
+
+### Images
+
+- The photograph for the hero image was sourced from [Delish](https://www.delish.com)
+
+- Where possible the links to the images for the recipes were taken directly from the source image url. 
+
+- On occasion when this did not work the image was copied to my local machine and then uploaded to my [imgBB](https://leec.imgbb.com/) account, where I took the link from instead.
+
+## Code
+
+- Template code for this site was taken from our Task Manager Mini Project Lessons and heaverly modified to suit the site needs.
+
+- Template code for horizontal-cards in the recipes taken from [Materialize](https://materializecss.com/cards.html) and modified to suit the sites needs.
+
+- Code for buttons taken from [Materialize](https://materializecss.com/buttons.html).
+
+- Code for the grid was taken from [Materialize](https://materializecss.com/grid.html)
+
+- Code for adding the correct prefixes to css was created using [AutoPrefixer](https://autoprefixer.github.io/).
+
+## Acknowledgements
+
+Special thanks to my mentor **Aaron Sinnot** for his patience and help and for listeningto my never-ending questions.
+
+Special thanks to **Malia Havlicek** whos patience and understanding has helped in many a dark day when things haven't gone to plan.
+
+## Disclaimer
+This is a student project and hence the content of this website is educational purposes only.
