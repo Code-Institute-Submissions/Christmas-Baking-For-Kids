@@ -178,14 +178,14 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
 
 
 ## Wireframes
-[Home Page](https://i.ibb.co/44gm75L/Home-Page.png)
-[Recipe Category Dropdown Page](https://i.ibb.co/j8JXqFQ/Recipe-Category-Dropdown.png)
-[All Recipes](https://i.ibb.co/3McmbQ7/All-Recipes.png)
-[Biscuit Recipes](https://i.ibb.co/pPZ4pDG/Biscuit-Recipes.png)
-[Login Page](https://i.ibb.co/X89kHJK/Login-Page.png)
-[Register Page](https://i.ibb.co/5F6hvvp/Register-Page.png)
-[Add Recipe Page](https://i.ibb.co/XSMdxkC/Add-Recipe.png)
-[Delete Modal](https://i.ibb.co/7j8LjHQ/Delete-Modal.png)
+- [Home Page](https://i.ibb.co/44gm75L/Home-Page.png)
+- [Recipe Category Dropdown Page](https://i.ibb.co/j8JXqFQ/Recipe-Category-Dropdown.png)
+- [All Recipes](https://i.ibb.co/3McmbQ7/All-Recipes.png)
+- [Biscuit Recipes](https://i.ibb.co/pPZ4pDG/Biscuit-Recipes.png)
+- [Login Page](https://i.ibb.co/X89kHJK/Login-Page.png)
+- [Register Page](https://i.ibb.co/5F6hvvp/Register-Page.png)
+- [Add Recipe Page](https://i.ibb.co/XSMdxkC/Add-Recipe.png)
+- [Delete Modal](https://i.ibb.co/7j8LjHQ/Delete-Modal.png)
 
 # Features
  
@@ -218,6 +218,10 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
         - Copyright information.
 
 ### Home Page
+<div align="center">
+<img src="https://i.ibb.co/W5GKHVM/home-page.png" alt="Christmas Baking For Kids Recipes Page page on all major screen sizes" >
+</div>
+<br>
 
 **Hero Image**
 - The Christmas Baking For Kids home page features a cheerful and colorful hero image of every child's favorite. Gingerbreadmen. I chose this image because when you see gingerbreadmen you think of christmas and the kids love making them.
