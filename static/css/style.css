@@ -179,6 +179,7 @@ nav .brand-logo {
         margin-top: 10px;
         width: 119px;
     }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 320px) {
     nav .brand-logo {

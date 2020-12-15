@@ -310,7 +310,8 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
 
 ### 404 Page
 - This page has the page header and looks like the other pages except that it has a 404 message and and image so the client is not left confused.
-- The image is that of a half eaten cookie and the message is " Oops it looks like this page has been eaten. Please click on the home button to return to the home page".
+- The message is " Oops it looks like this page has been eaten. Please click on the home button to return to the home page".
+- Thanks to my mentor for helping to explain these pages to me.
 
 ### 500 Page
 - This page is very similar to the 404 page and has a message of " Oops there seems to be an error. Our technicians have been notified, Please click the home button to return home."
@@ -320,6 +321,7 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
 Admin account 
 - Give myself (or any other administrator of Christmas Baking For Kids) special permission to access and or change data in the database from a Christmas Baking For Kids interface, rather than having to access the data directly in MongoDB.
 - Give admin the ability to view, edit and delete any Recipe from database.
+- To give the user the option to have their profile of recipes printed- A hard copy Recipe Book (brilliant for coffee table or gifts).
 
 The Features Left To Implement is a section that will grow in time as the site itself grows.
 
@@ -351,9 +353,9 @@ The types of data stored in MongoDB for my project are:
 ### Users
 - The USERS collection helps tie recipes to users of the website and to manage access to certain functionalities on the site.
     - **Create** User Id's are created when the user registers for the first time. The user can then return with their login data.
-    - **Read** The user can read the categories and read through the recipes that are shown. They can then add their own recipes.
-    - **Update** The user can only add/edit their own added recipes at this point.
-    - **Delete** The user can only delete their own added recipes here. They have no access to other recipes added/edited as they are not the users.
+    - **Read** Users are displayed on the profile page and used in determining if a user can add, update or delete recipes,
+    - **Update** User records are not updated at this time,  features that expand the profile to include an avatar and email would eventually include updating USER records.
+    - **Delete** users are not deleted at this time.
 
 ### Recipes
 - The RECIPES collection stores data about how to create holiday treats.
@@ -361,8 +363,6 @@ The types of data stored in MongoDB for my project are:
     - **Read**  The recipes can be read by many users but not changed in any way unless the user is the session user.
     - **Update**  Recipes can only be updated if the user is the session user and has added that perticular recipe.
     - **Delete**  Recipes can only be deleted if the user is the session user and has added that perticular recipe themselves.
-
-
 
 ## ERD 
 - This is a Entity Relationship Diagram of how the database collections interact.
@@ -415,7 +415,19 @@ The types of data stored in MongoDB for my project are:
           says Successful upload of recipe. and you are directed to the recipes page with the list of all the recipes. All worked well with no errors.
         - Now if you return to your profile page your recipe will be there with an edit green button and a red delete button on your recipe. If you notice this is only on your recipe and none other.
           This is because you are logged in. You may only edit or delete your own recipes.
-        You can now log out and you are then taken back to the home page.
+        You can now log out and you are then taken back to the home page.<br>
+
+## Defects
+ - Line spacing issues. With the help of [Stackoverflow](https://stackoverflow.com/questions/498461/how-to-save-user-entered-line-breaks-from-a-textarea-to-a-database)
+   I managed to sort out the problem.
+ - Have had some responsive issues where the smaller screens were not aligning, only to find i was missing a bracket. once in place
+   all worked well.
+
+ ## Still to be fixed
+ - There is an intermittant bug that i have not been able to replicate or fix. i keep getting a  "POST /login HTTP/1.1" 302 -
+   Tutor support tried to help but it stumpped them too.
+ - I would like to iron out some issues on the smaller screens, they are functional but not ideal.I would be looking to put the buttons
+   vertically centered next to the images.
 
 # Deployment
 
