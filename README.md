@@ -356,11 +356,11 @@ The types of data stored in MongoDB for my project are:
     - **Delete** The user can only delete their own added recipes here. They have no access to other recipes added/edited as they are not the users.
 
 ### Recipes
-The RECIPES collection stores data about how to create holiday treats.
-- **Create** New recipes can be added by many new users to the recipe list.
-- **Read**  The recipes can be read by many users but not changed in any way unless the user is the session user.
-- **Update**  Recipes can only be updated if the user is the session user and has added that perticular recipe.
-- **Delete**  Recipes can only be deleted if the user is the session user and has added that perticular recipe themselves.
+- The RECIPES collection stores data about how to create holiday treats.
+    - **Create** New recipes can be added by many new users to the recipe list.
+    - **Read**  The recipes can be read by many users but not changed in any way unless the user is the session user.
+    - **Update**  Recipes can only be updated if the user is the session user and has added that perticular recipe.
+    - **Delete**  Recipes can only be deleted if the user is the session user and has added that perticular recipe themselves.
 
 
 
