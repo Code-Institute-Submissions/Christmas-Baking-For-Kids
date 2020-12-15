@@ -350,7 +350,24 @@ The types of data stored in MongoDB for my project are:
 
 ### Users
 - The USERS collection helps tie recipes to users of the website and to manage access to certain functionalities on the site.
+    - **Create** User Id's are created when the user registers for the first time. The user can then return with their login data.
+    - **Read** The user can read the categories and read through the recipes that are shown. They can then add their own recipes.
+    - **Update** The user can only add/edit their own added recipes at this point.
+    - **Delete** The user can only delete their own added recipes here. They have no access to other recipes added/edited as they are not the users.
 
+### Recipes
+The RECIPES collection stores data about how to create holiday treats.
+- **Create** New recipes can be added by many new users to the recipe list.
+- **Read**  The recipes can be read by many users but not changed in any way unless the user is the session user.
+- **Update**  Recipes can only be updated if the user is the session user and has added that perticular recipe.
+- **Delete**  Recipes can only be deleted if the user is the session user and has added that perticular recipe themselves.
+
+
+
+## ERD 
+- This is a Entity Relationship Diagram of how the database collections interact.
+[ERD](https://i.ibb.co/LJfkvLR/ERD.png)
+<br>
 
 # Technologies Used
 
