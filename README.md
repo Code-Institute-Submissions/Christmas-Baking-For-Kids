@@ -279,8 +279,11 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
   click on the "NO" button the client is returned to the edit page.
 
 ### 404 Page
+    - This page has the page header and looks like the other pages except that it has a 404 message and and image so the client is not left confused.
+    - The image is that of a half eatern cookie and the message is " Oops it looks like this page has been eatern. Please click on the home button to return to the home page".
 
 ### 500 Page
+    - This page is very similar to the 404 page and has a message of " Oops there seems to be an error. Our technitians have been notified, Please click the home button to return home."
 
 ## Features Left to Implement
 
@@ -320,8 +323,6 @@ The types of data stored in MongoDB for my project are:
 
 ### Libraries
 - [JQuery](https://jquery.com) to simplify DOM manipulation.
-- [Jasmine](https://jasmine.github.io/) to run automated tests on JavaScript and jQuery code.
-- [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery) to make it possible to test jQuery code using Jasmine.
 - [Materialize](https://materializecss.com/) to simplify the structure of the website and make the website responsive.
 - [FontAwesome](https://fontawesome.com/) to provide icons for this site.
 - [Google Fonts](https://fonts.google.com/) to style the website fonts.
@@ -349,7 +350,13 @@ The types of data stored in MongoDB for my project are:
         - I then mannually selected the links for the categories to see if they all went to the correct pages.They did.
         - I logged in as a returning user tested the password and username to see if they worked , no errors.
         - I registered as a new user to see that the username and password worked. No errors.
-
+        - Once in as a user I was directed to the profile page, no recipes as yet.
+        - Clicked on the New Recipe tab to add a recipe. The page has the category name at the top, the recipe name below that. The Recipe URL for the image below that.
+          then you have the ingredients and below that the method and then you have spave for your name and where you got the recipe from. Click on the add recipe button and you get a message that 
+          says Successful upload of recipe. and you are directed to the recipes page with the list of all the recipes. All worked well with no errors.
+        - Now if you return to yur profile page your recipe will be there with an edit green button and a red delete button on your recipe. If you notice this is only on your recipe and none other.
+          This is because you are logged in. You may only edit or delete your own recipes.
+        You can now log out and you are then taken back to the home page.
 
 # Deployment
 
