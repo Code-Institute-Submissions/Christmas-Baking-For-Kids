@@ -5,9 +5,10 @@
 </div> 
 <br>
 
-[Christmas Baking](https://christmas-baking-for-kids.herokuapp.com) was created by Lee-Ann Clark. For all the parents who love baking and who enjoy sharing the kitchen with kids who like to experement and find their own way in the world of baking.
+[Christmas Baking](https://christmas-baking-for-kids.herokuapp.com) was created by Lee-Ann Clark. For all the parents who love baking and who enjoy sharing the kitchen with kids who like to experiment and find their own way in the world of baking.
 
 As a single mom who has a very industrious daughter, finding new things to make, bake and try is always a challenge. Having easy to follow recipes which are fun to make and delicious to eat, keeps young minds busy.
+
 Being a mom who travels to different countries, adding new and flavorsome recipes that can be accessed easily adds new exciting choices for baking.
 
 ## Table of Contents
@@ -26,10 +27,13 @@ Being a mom who travels to different countries, adding new and flavorsome recipe
         - [Elements on every Page](#elements-on-every-page)
         - [Home Page](#home-page)
         - [Recipes Page](#recipes-page)
-        - [Login Page](#login-page)
+        - [Login Page](#log-in-page)
+        - [Register Page](#register-page)
         - [profile Page](#profile-page)
         - [Add Recipe Page](#add-recipe-page)
-        - [Log Out page](#logout-page)
+        - [Edit Recipe Page](#editing-recipe-page)
+        - [Delete Recipe Modal](#delete-recipe-modal)
+        - [Log Out page](#log-out-page)
         - [404 Page](#404-page)
         - [500 Page](#500-page)
     - [Features Left to Implement](#features-left-to-implement)
@@ -63,6 +67,7 @@ Being a mom who travels to different countries, adding new and flavorsome recipe
 ### Visitor Goals
 
 The target audience for Christmas Baking for kids is:
+
 - Families with children aged from 6 up who love to be in the kitchen.
 - Grandparents who want to spend time sharing family recipes with their grandkids.
 - Anyone who enjoys baking and wants to add and store their own recipes online.
@@ -75,7 +80,8 @@ User goals are:
 - To be able to grow your own profile of recipes and print out your own family recipe book
 - To be able to try new recipes from other families and watch the recipe book grow.
 
-Some extra goals users might have.
+Some extra goals users might have:
+
 - Be inspired and join a baking class or demonstration.
 - Spend more quality fun time with their kids in the kitchen.
 - Teach kids about ingredients and where to buy them.
@@ -97,29 +103,25 @@ Christmas Baking For Kids meets these user needs in that:
 
 Business user goals are:
 
-- A great gifting idea-To have a family Recipe book printed( This is how the site can be moniterized)
+- A great gifting idea-To have a family Recipe book printed (This is how the site can be monetized)
 - A user-friendly design that reaches out to both parents and children
 - The user interface is easy to use and the input of data is done in a efficient manner.
 
 Christmas Baking For Kids meets these user needs in that:
 
-- The login page provides the user access to the recipe book to be able to add their own recipes. The user interface for the input on this page is carefully controlled in that
-  the user has to add a user name and password, both of which are required to move forward.
+- The login page provides the user access to the recipe book to be able to add their own recipes. The user interface for the input on this page is carefully controlled in that the user has to add a user name and password, both of which are required to move forward.
 - The profile page shows the user his/her recipes that have been added. The user also has the option to go back into their own profile and edit or delete their own recipes.
-- The Add-Recipe page clearly structured and laid out in an easy to understand way.The user has the option to Add their Recipe, if they are satissfied they can
-  then save their recipe or delete it.
+- The Add-Recipe page clearly structured and laid out in an easy to understand way.The user has the option to Add their Recipe, if they are satisfied they can then save their recipe or delete it.
 - The user interface for the input of recipe data on the add-recipe page has been controlled to validate input. For example the correct url format is required for the image input.
-  The fields for name of recipe and recipe ingredients and method are required so that information needs to be added correctly.
-  Setting input field types to `minlength`, `maxlength`,`number`, `url` etc makes sure the user is prompted when the data they have added is incorrect.
-
+- The fields for name of recipe and recipe ingredients and method are required so that information needs to be added correctly.
+- Setting input field types to `minlength`, `maxlength`,`number`, `url` etc makes sure the user is prompted when the data they have added is incorrect.
 - The recipe page then shows the user all listed recipes including their own. 
-
 - To make navigation easy for the user, buttons have been provided on the pages to help direct should they get stuck. For example, cancel, edit, add-recipe etc.
 
 ### Christmas Baking For Kids Goals
 
-- To provide a fun and easy to use site for familys to search, store and retrieve their special recipes.
-- To be able to find inspiration in newley added recipes
+- To provide a fun and easy to use site for families to search, store and retrieve their special recipes.
+- To be able to find inspiration in newly added recipes
 - So that I as a student can learn and practice frontend and backend programming together for the first time. To combine the use of HTML, CSS, Materialize and JQuery with Python, MongoDB, Flask and Jinja.
 
 ## User Stories
@@ -128,7 +130,7 @@ Christmas Baking For Kids meets these user needs in that:
 
 As a visitor to Christmas Baking For Kids I would expect/want/need:
 
-1. To easily find what I am looking for, I want the site layout to make sense, as varing ages have varing understanding so I dont want to be confused or put off using it. 
+1. To easily find what I am looking for, I want the site layout to make sense, as varying ages have varying understanding so I dont want to be confused or put off using it. 
 
 2. The information to be laid out in a way that is easy for me to navigate and understand, so I may find what I need quickly and efficiently.
 
@@ -145,33 +147,34 @@ As a visitor to Christmas Baking For Kids I would expect/want/need:
 ## Design Choices
 
 Christmas Baking For Kids has a Christmas and family friendly feel to it. The emphasis was on providing easy to follow information in an understandable way for any age group. 
+
 The following design choices were made with this in mind:
 
 ### Fonts
 
  The primary font `Playfair Display` was chosen for the main text on the site as it is easy to read both when printed and in cursive. 
+ 
  The site will have all age-groups reading it so the printing needs to be clear and easy to understand.
 
 ### Colours
 <div align="center">
     <img src="https://i.ibb.co/Xpm5Nf5/color-palette.png" alt="Christmas Baking Color Palette" aria-label="Christmas Baking Color Palette" />
 </div>
+
 Being a Christmas recipe book, Green is the color I chose. It is easy on the eye and goes with all images that are added.
 
 - The navbar background colour is a soft green colour, dark enough to provide contrast with the white headings, while darkening to a darker green when hovering over the nav links.
-- The Welcome heading is done in Green which stands out on the crips white background of the page.
+- The Welcome heading is done in Green which stands out on the crisp white background of the page.
 - The category cards have clear black writing on them and a link to their page at the bottom of the card with a green background.
-  The writing in the green background turns white when you hover over it.
-- In the footer a green was again used, setting the footer apart from the rest of the content. The writing in the footer is an off white which is easy on the eye. The base of the footer
-  where the copy right is has a darker green to make it stand out a little more. 
+- The writing in the green background turns white when you hover over it.
+- In the footer a green was again used, setting the footer apart from the rest of the content. The writing in the footer is an off white which is easy on the eye. The base of the footer where the copy right is has a darker green to make it stand out a little more. 
 
 ### Styling
 
 - All **buttons** on the site fit the materialize button styling in size and shape, I kept the colors of green red and blue for the Christmas theme. 
 - Materialize **cards** were utilized on the home page to display the category selection, with a link to each category selection page on it. 
 - hover effects
-    - Some subtle **shadows** have been added to the nav bar and category cards, to give them depth on the page. The **color-change** on the navbar 
-    on hover, gives the user a positive user experience in highlighting the section of the site they are hovering over.
+    - Some subtle **shadows** have been added to the nav bar and category cards, to give them depth on the page. The **color-change** on the navbar on hover, gives the user a positive user experience in highlighting the section of the site they are hovering over.
 
 
 ## Wireframes
@@ -206,90 +209,108 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
 
 - Footer
     - The footer features:
-        - A list of category links users might need when viewing the footer and wanting to return to a perticular page.
+        - A list of category links users might need when viewing the footer and wanting to return to a particular page.
         - A thank you message. 
         - Copyright information.
 
 ### Home Page
 
 **Hero Image**
-- The Christmas Baking For Kids home page features a cheerful and colorful hero image of every childs favorite. Gingerbreadmen. I chose this image because when you see gingerbreadmen you think of christmas and the kids love making them.
-  This image is coded as a background-image in css and set to `background-size: cover;` so that it is responsive and doesnt distort or stretch. 
+- The Christmas Baking For Kids home page features a cheerful and colorful hero image of every child's favorite. Gingerbreadmen. I chose this image because when you see gingerbreadmen you think of christmas and the kids love making them.
+- This image is coded as a background-image in css and set to `background-size: cover;` so that it is responsive and doesnt distort or stretch. 
 
 **Horizontal Cards**
 - Each horizontal card on the home page gives the user some idea of what categories they will find. There is am image of the category, for example biscuits and next to it a little verse relating
-  to the category. Below this is a link to the page should you decide to go to that perticular category from the horizontal card.
+  to the category. Below this is a link to the page should you decide to go to that particular category from the horizontal card.
 
 **Footer**
 - The footer is in the same shade of green as the navbar with a darker shade of green for the copyright at the bottom of the page. There is a little thank you message to the user and the hope that they added some recipes.
-  There is a Quick links section so that you can return to any of the category pages should you choose from the footer itself. The footer appears at the base of all pages.
+- There is a Quick links section so that you can return to any of the category pages should you choose from the footer itself. 
+- The footer appears at the base of all pages as it's part of the base.html.
 
 ### Recipes Page
 <div align="center">
 <img src="https://i.ibb.co/f8NmPtq/Recipes-Page.png" alt="Christmas Baking For Kids Recipes Page page on all major screen sizes" >
 </div>
 <br>
+
 **Dropdown List**
 - This dropdown list is found in the navbar. It is a dropdown list of all categories of recipes found in the recipe book.At the top is `ALL`, then `Biscuits`, `Sweets`, `Cupcakes` and then `Desserts. 
-  Each selection takes you to the recipe page of all recipes added in that category in the book.
+- Each selection takes you to the recipe page of all recipes added in that category in the book.
 
 **Search Bar**
 - On the top of each recipe page is a Search Bar that was coded in using `Text Index Searching`. The search bar has a search button and a reset button on the left side of the search bar.
-  The user can search through a set of parameters such as `Recipe Name` and  `Ingredients` to find their favorite recipe.
+- The user can search through a set of parameters such as `Recipe Name` and  `Ingredients` to find their favorite recipe.
 
 **Horizontal Recipe Cards**
-- Each horizontal recipe card on the recipe page whether it is for ALL recipes or a perticular category have the same layout. They have the green that is consistent throughout the site as a background for 
-  the recipe name. The card then has an image that expands when clicked on and is coded as `Materialboxed` from materialize. Next to the image is the `Cooking Time` for the recipe. Below this is the information of who added the recipe. `Added By` 
-  and then the card also gives the information of who the recipe is credited to. `Credit To`.
+- Each horizontal recipe card on the recipe page whether it is for ALL recipes or a particular category have the same layout. 
+- They have the green that is consistent throughout the site as a background for the recipe name. 
+- The card then has an image that expands when clicked on and is coded as `Materialboxed` from materialize. 
+- Next to the image is the `Cooking Time` for the recipe. 
+- Below this is the information of who added the recipe. `Added By`.
+- The card also gives the information of who the recipe is credited to. `Credit To`.
 
 ### Log In Page
 <div align="center">
 <img src="https://i.ibb.co/yY2ksXm/Login-Page.png" alt="Christmas Baking For Kids Login Page page on all major screen sizes" >
 </div>
 <br>
+
 - The log in page features a simple **form** where the user enters their username and their password. If the user enters an incorrect password or username a flash message will inform the user of this.
-  The user once logged in will recieve a welcome message and be directed to their profile page. 
-- The profile page a page for that spercific user. All the recipes that this user has ever added will be on this page. This page is unique to the user.
-- The user has the option on this page to edit or delete recipes. These buttons will appear on only the session users profile page on the recipes. The user will not be able to edit or delete recipes that 
-  were not added by the user themselves.
+  The user once logged in will receive a welcome message and be directed to their profile page. 
+- The profile page a page for that specific user. All the recipes that this user has ever added will be on this page. This page is unique to the user.
+- The user has the option on this page to edit or delete recipes. These buttons will appear on only the session users profile page on the recipes. The user will not be able to edit or delete recipes that were not added by the user themselves.
 - If the user does not have a username or password the user is directed to the register page.
 
-**Register Page**
-- The Register page is also a simple **form** where by the user has to choose a username and password. Once the user name and password have been entered and are not duplicates of what is already there, the 
-  site will direct you to your blank profile page. Now you are ready to start adding recipes.
+### Register Page
+- The Register page is also a simple **form** where by the user has to choose a username and password.
+ - Once the user name and password have been entered and are not duplicates of what is already there, the site will direct you to your blank profile page. Now you are ready to start adding recipes.
 
-**New Recipes**
+
+### Profile Page
+- This page is a menu option only if users are logged in
+- If you register, you are automatically taken to this page
+- It has welcome block greeting you by your user name
+- If you have added recipes, you can see them from this page
+- The profile page is a gateway to the edit recipe and delete recipe pages
+
+### Add Recipe Page
 <div align="center">
 <img src="https://i.ibb.co/XtgpJ6c/Add-Recipe.png" alt="Christmas Baking For Kids Add Recipe Page page on all major screen sizes" >
 </div>
 <br>
-- This can only be accessed if you are logged in as a user.
-- The New Recipes page is a **form** that gives the user the selection of which caregory they want the recipe to show in. The user then has to correctly insert the image URL for their recipe. This has been tested
-  so that the input needs to be correct otherwise a **404** page will appear.
--The user then needs to complete the cooking time, how many the recipe makes and then all the ingredients and the method need completing. They can then add their name to the recipe and hit the `Add Recipe` button 
-  at the bottom of the page. Upon succsessful upload of the recipe a message will show saying the recipe was successfully uploaded.
-- Validation of the `<input>` fields is handled in different ways.The input `type` attributes are set to `text`, and `url`.
-- Limits are placed on both min and max lengths of input accepted.<br>
 
-**Editing Recipe**
-- Once a new recipe has been added and the user wants to edit his /her recipe, they can log in to their profile page and on their recipes will be 2 buttons.
-  One for `Edit` and the other for `Delete`. The edit button allows the user to edit the recipe. Upon successful completion a message will state that the recipe
-  has beed successfully edited and the user is returned to the recipe page. Should the user decide that they want to **DELETE** the recipe and they click on deletd,
-  a modal will appear with a message asking if the user is sure that want to delete this? if the user clicks on the "Yes" button below the recipe will be deleted. If they 
-  click on the "NO" button the client is returned to the edit page.
+- This can only be accessed if you are logged in as a user.
+- The New Recipes page is a **form** that gives the user the selection of which category they want the recipe to show in. The user then has to correctly insert the image URL for their recipe. This has been tested so that the input needs to be correct otherwise a **404** page will appear.
+- The user then needs to complete the cooking time, how many the recipe makes and then all the ingredients and the method need completing. They can then add their name to the recipe and hit the `Add Recipe` button at the bottom of the page. Upon successful upload of the recipe a message will show saying the recipe was successfully uploaded.
+- Validation of the `<input>` fields is handled in different ways.The input `type` attributes are set to `text`, and `url`.
+- Limits are placed on both min and max lengths of input accepted.
+
+### Editing Recipe Page
+- Once a new recipe has been added and the user wants to edit his /her recipe, they can log in to their profile page and on their recipes will be 2 buttons.  One for `Edit` and the other for `Delete`. 
+- The edit button allows the user to edit the recipe. Upon successful completion a message will state that the recipe has been successfully edited and the use is returned to the recipe page. 
+
+### Delete Recipe Modal
+-  Should the user decide that they want to **DELETE** the recipe and they click on delete button, a modal will appear with a message asking if the user is sure that want to delete this? if the user clicks on the "Yes" button below the recipe will be deleted. 
+- If they click on the "NO" button the client is returned to the edit page. 
+- This modal is a safety net to ensure the user doesn't remove all the information they entered.
+- Users have to be logged in to be able to a delete recipe 
+
+### Log Out Page
+- The logout page allows users to end their session.
+- It provides a way for users to prevent others from updating their recipes.
 
 ### 404 Page
-    - This page has the page header and looks like the other pages except that it has a 404 message and and image so the client is not left confused.
-    - The image is that of a half eatern cookie and the message is " Oops it looks like this page has been eatern. Please click on the home button to return to the home page".
+- This page has the page header and looks like the other pages except that it has a 404 message and and image so the client is not left confused.
+- The image is that of a half eaten cookie and the message is " Oops it looks like this page has been eaten. Please click on the home button to return to the home page".
 
 ### 500 Page
-    - This page is very similar to the 404 page and has a message of " Oops there seems to be an error. Our technitians have been notified, Please click the home button to return home."
+- This page is very similar to the 404 page and has a message of " Oops there seems to be an error. Our technicians have been notified, Please click the home button to return home."
 
 ## Features Left to Implement
 
 Admin account 
-- Give myself (or any other administrator of Christmas Baking For Kids) special permission to access and or change data in the database from a Christmas Baking For Kids interface, 
-  rather than having to access the data directly in MongoDB.
+- Give myself (or any other administrator of Christmas Baking For Kids) special permission to access and or change data in the database from a Christmas Baking For Kids interface, rather than having to access the data directly in MongoDB.
 - Give admin the ability to view, edit and delete any Recipe from database.
 
 The Features Left To Implement is a section that will grow in time as the site itself grows.
@@ -298,9 +319,7 @@ The Features Left To Implement is a section that will grow in time as the site i
 
 ### Database Choice
 
-As this website is a student project and where i am in the course my only opportunity is use NoSQL. 
-In order to gain experience in using NoSQL this project uses the NoSQL database MongoDB. 
-Easy access to relational data was made possible as inner objects were used inside the data structure so it could be easily accessed and looped through where needed.
+As this website is a student project and where I am in the course my only opportunity is use NoSQL.  In order to gain experience in using NoSQL this project uses the NoSQL database MongoDB.  Easy access to relational data was made possible as inner objects were used inside the data structure so it could be easily accessed and looped through where needed.
 
 ### Data Storage Types
 
@@ -497,7 +516,7 @@ SECRET_KEY | `<your_secret_key>`
 
 Special thanks to my mentor **Aaron Sinnot** for his patience and help and for listeningto my never-ending questions.
 
-Special thanks to **Malia Havlicek** whos patience and understanding has helped in many a dark day when things haven't gone to plan.
+Special thanks to **Malia Havlicek** who's patience and understanding has helped in many a dark day when things haven't gone to plan.
 
 ## Disclaimer
 This is a student project and hence the content of this website is educational purposes only.
