@@ -337,6 +337,21 @@ The types of data stored in MongoDB for my project are:
 - Boolean
 - Object
 
+### CRUD
+
+- CRUD was used in the development of this site. Create, Read, Update and Delete. The following sections used CRUD.
+
+## Categories
+- The CATEGORIES collection is used to organize recipes by common types. They are hard wired to be Biscuits, Sweets, Cupcakes and Desserts.
+    - **Create** Recipe categories are added when accessing the /upload_categories url the first time
+    - **Read** The recipe categories are shown as a drop down when adding a recipe.
+    - **Update**  Categories cannot be updated at this point in time
+    - **Delete** Categories cannot be deleted at this point in time
+
+### Users
+- The USERS collection helps tie recipes to users of the website and to manage access to certain functionalities on the site.
+
+
 # Technologies Used
 
 ### Tools
