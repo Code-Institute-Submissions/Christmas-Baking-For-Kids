@@ -413,7 +413,7 @@ The types of data stored in MongoDB for my project are:
         - Clicked on the New Recipe tab to add a recipe. The page has the category name at the top, the recipe name below that. The Recipe URL for the image below that.
           then you have the ingredients and below that the method and then you have spave for your name and where you got the recipe from. Click on the add recipe button and you get a message that 
           says Successful upload of recipe. and you are directed to the recipes page with the list of all the recipes. All worked well with no errors.
-        - Now if you return to yur profile page your recipe will be there with an edit green button and a red delete button on your recipe. If you notice this is only on your recipe and none other.
+        - Now if you return to your profile page your recipe will be there with an edit green button and a red delete button on your recipe. If you notice this is only on your recipe and none other.
           This is because you are logged in. You may only edit or delete your own recipes.
         You can now log out and you are then taken back to the home page.
 
