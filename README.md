@@ -184,8 +184,10 @@ Being a Christmas recipe book, Green is the color I chose. It is easy on the eye
 - [Biscuit Recipes](https://i.ibb.co/pPZ4pDG/Biscuit-Recipes.png)
 - [Login Page](https://i.ibb.co/X89kHJK/Login-Page.png)
 - [Register Page](https://i.ibb.co/5F6hvvp/Register-Page.png)
+- [Register-mobile](https://i.ibb.co/f8PPj0d/Register.png)
 - [Add Recipe Page](https://i.ibb.co/XSMdxkC/Add-Recipe.png)
 - [Delete Modal](https://i.ibb.co/7j8LjHQ/Delete-Modal.png)
+- [Profile-mobile](https://i.ibb.co/MGjg210/Profile.png)
 
 # Features
  
@@ -428,6 +430,8 @@ The types of data stored in MongoDB for my project are:
    Tutor support tried to help but it stumpped them too.
  - I would like to iron out some issues on the smaller screens, they are functional but not ideal.I would be looking to put the buttons
    vertically centered next to the images.
+ - On smaller screens I have an issue when using dev tools that i see the screen not aligning but when others view it through heroku is shows aligned.
+   very frustrating.
 
 # Deployment
 
